@@ -14,8 +14,9 @@ Such Red. Less Green. Much ouch. So Bääääm. WOW
 ### Configuration-Options:
 * Only show damage: No heal.
 * Display mode: 'Straight' for OCD-Version.
-* Amount of Numbers: Low for number-hell if you freeze.
-* Decimal Points
+* Amount of numbers: Low for number-hell if you freeze.
+* Decimal points: "1.3333", "1.3" or simply "1"
+* Number size
 
 Special thanks to Neutral_Steve!
 
