@@ -17,5 +17,9 @@ Such Red. Less Green. Much ouch. So Bääääm. WOW
 * Amount of Numbers: Low for number-hell if you freeze.
 * Decimal Points
 
+Special thanks to Neutral_Steve!
+
+## This is the singleplayer version. Look here for the Don't Starve Together version
+
 ### Steam
 http://steamcommunity.com/sharedfiles/filedetails/?id=220511926
