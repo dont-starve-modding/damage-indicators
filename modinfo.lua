@@ -1,7 +1,7 @@
 name = "Damage Indicators"
 description = "Baaaaam Baam. Take that, nasty brute of hell!"
 author = "s1m13"
-version = "0.5"
+version = "0.5.1"
 dont_starve_compatible = true
 reign_of_giants_compatible = true
 shipwrecked_compatible = true

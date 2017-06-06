@@ -1,4 +1,8 @@
 
+
+
+
+
 ----------------------------------------------------
 ----------------- CONFIGURATION --------------------
 
@@ -138,7 +142,7 @@ local function CreateDamageIndicator(parent, amount)
           dside = -dside
         end
         ddside = 0.0
-        -----------------------------
+        -------------------------------------
       end
 
       while inst:IsValid() and t < t_max do
@@ -152,11 +156,11 @@ local function CreateDamageIndicator(parent, amount)
           ddside = -side * math.random()*TUNING.SIDE_WAVE_RND
           dside = dside + ddside
           side = side + dside
-          -------------------------------------
+          --------------------------------------
         end
 
         if TUNING.DISPLAY_MODE == 'bouncy' then
-          -- bounce around mode ---------------
+          -- bounce around mode ----------------
           ddy = -TUNING.GRAVITY
           dy = dy + ddy
           y = y + dy
@@ -168,18 +172,18 @@ local function CreateDamageIndicator(parent, amount)
           ddside = 0
           dside = dside + ddside
           side = side + dside
-          -------------------------------------
+          --------------------------------------
         end
 
         local headingtarget = 45 --[[TheCamera.headingtarget]] % 180
         if headingtarget == 0 then
           label:SetPos(0, y, side)  		-- from 3d plane x = 0
         elseif headingtarget == 45 then
-          label:SetPos(side, y, -side)	-- from 3d plane x + z = 0
+          label:SetPos(side, y, -side)	    -- from 3d plane x + z = 0
         elseif headingtarget == 90 then
-          label:SetPos(side, y, 0)		-- from 3d plane z = 0
+          label:SetPos(side, y, 0)          -- from 3d plane z = 0
         elseif headingtarget == 135 then
-          label:SetPos(side, y, side)		-- from 3d plane z - x = 0
+          label:SetPos(side, y, side)       -- from 3d plane z - x = 0
         end
         t = t + dt
         label:SetFontSize( TUNING.LABEL_FONT_SIZE * math.sqrt(1 - t / t_max))
@@ -196,7 +200,7 @@ end
 AddComponentPostInit("health", function(Health, inst)
   inst:ListenForEvent("healthdelta", function(inst, data)
     if inst.components.health then
-      local amount = (data.newpercent - data.oldpercent)*inst.components.health.maxhealth
+      local amount = (data.newpercent - data.oldpercent) * inst.components.health.maxhealth
       -- print(amount)
       if math.abs(amount) > TUNING.SHOW_NUMBERS_THRESHOLD then
         if not (TUNING.SHOW_DAMAGE_ONLY and amount > 0) then
