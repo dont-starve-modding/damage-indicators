@@ -20,7 +20,7 @@ Such Red. Less Green. Much ouch. So Bääääm. WOW
 
 Special thanks to Neutral_Steve!
 
-## This is the singleplayer version. Look here for the Don't Starve Together version
+## This is the singleplayer version. Look [here](https://github.com/dont-starve-modding/damage-indicators-together) for the Don't Starve Together version
 
 ### Steam
 http://steamcommunity.com/sharedfiles/filedetails/?id=220511926
